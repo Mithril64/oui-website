@@ -5,6 +5,11 @@
 .grid-header {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 .pl-5 {
@@ -31,6 +36,7 @@
 .grid-main {
 	position: relative;
 	text-align: center;
+	top: 10vw;
 }
 
 .pl-10 {

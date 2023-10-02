@@ -34,9 +34,19 @@
 }
 
 .grid-main {
-	position: relative;
+	position: absolute;
 	text-align: center;
 	top: 10vw;
+	left: 0;
+	width: 100vw;
+}
+
+.grid-main-2 {
+	position: absolute;
+	text-align: center;
+	top: 70vw;
+	left: 0;
+	width: 100vw;
 }
 
 .pl-10 {
@@ -107,4 +117,18 @@
 
 .align-top {
 	align-self: start;
+}
+
+p {
+	font-size: 2vw;
+}
+
+footer {
+	text-align: center;
+	background-color: #00567C;
+	color: #EDE5BB;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }

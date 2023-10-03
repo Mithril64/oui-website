@@ -112,7 +112,7 @@ footer {
 }
 
 .main-grid h1 {
-	font-size: 12vmin;
+	font-size: 7vw;
 	font-family: 'Caveat', cursive;
 	color: var(--red-color);
 	text-align: center;
@@ -131,4 +131,56 @@ footer {
 .main-grid p {
 	text-align: center;
 	color: var(--blue-color);
+}
+
+#color-1 {
+	background-color: #00657C;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-2 {
+	background-color: #EDE5BB;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-3 {
+	background-color: #BAD3EE;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-4 {
+	background-color: #95261F;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+.effect-wrapper {
+	z-index: 999;
+}
+
+.pr-5 {
+	padding-right: 5vw;
+}
+
+#main-content {
+	display: none;
 }

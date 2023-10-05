@@ -1,7 +1,7 @@
 :root {
-	--blue-color: #00567C;
-	--yellow-color: #EDE5BB;
-	--red-color: #95261F;
+	--blue-color: #00567c;
+	--yellow-color: #ede5bb;
+	--red-color: #95261f;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
 }
 
 .font-circular {
-	font-family: 'Circular Std Book', serif;
+	font-family: "Circular Std Book", serif;
 }
 
 .pl-6 {
@@ -113,7 +113,7 @@ footer {
 
 .main-grid h1 {
 	font-size: 7vw;
-	font-family: 'Caveat', cursive;
+	font-family: "Caveat", cursive;
 	color: var(--red-color);
 	text-align: center;
 }
@@ -121,7 +121,7 @@ footer {
 .main-grid-image {
 	object-fit: contain;
 	max-height: 100%;
-	max-width: 	35vmin;
+	max-width: 35vmin;
 }
 
 .main-image {
@@ -134,7 +134,7 @@ footer {
 }
 
 #color-1 {
-	background-color: #00657C;
+	background-color: #00657c;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -144,7 +144,7 @@ footer {
 }
 
 #color-2 {
-	background-color: #EDE5BB;
+	background-color: #ede5bb;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -154,7 +154,7 @@ footer {
 }
 
 #color-3 {
-	background-color: #BAD3EE;
+	background-color: #bad3ee;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -164,7 +164,7 @@ footer {
 }
 
 #color-4 {
-	background-color: #95261F;
+	background-color: #95261f;
 	position: fixed;
 	top: 50%;
 	left: 50%;

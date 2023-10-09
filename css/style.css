@@ -184,3 +184,22 @@ footer {
 #main-content {
 	display: none;
 }
+
+@media only screen and (min-width:360px) {
+
+
+	.bg-yellow {
+		background-color: var(--yellow-color);
+	}
+
+	.grid-header {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		z-index: 100;
+
+	}
+}

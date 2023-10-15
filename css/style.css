@@ -44,7 +44,7 @@ body {
 }
 
 .logo-image {
-	width: 10vw;
+	width: 19vw;
 	height: 10vw;
 }
 
@@ -54,6 +54,10 @@ body {
 
 .font-circular {
 	font-family: "Circular Std Book", serif;
+}
+
+.font-circular-bold{
+	font-family: "Circular Std Bold", serif;
 }
 
 .pl-6 {

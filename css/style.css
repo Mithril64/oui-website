@@ -58,6 +58,7 @@ body {
 
 .font-circular-bold{
 	font-family: "Circular Std Bold", serif;
+	font-size:xx-large;
 }
 
 .pl-6 {
@@ -99,11 +100,7 @@ p {
 
 footer {
 	text-align: center;
-	background-color: var(--blue-color);
-	color: var(--yellow-color);
-	position: relative;
-	bottom: 0;
-	left: 0;
+	color: var(--blue-color);
 	width: 100%;
 }
 

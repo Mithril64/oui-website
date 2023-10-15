@@ -246,7 +246,8 @@ footer {
 		width: 25vh;
 		height: 25vh;
 	}
-/*drop down menu*/
+
+/*drop down menu (Tapiwa)*/
 .dropbtn{
     color: #00657C;
     cursor: pointer;
@@ -259,10 +260,6 @@ footer {
 }
 .dropbtn:hover{
     border-bottom: solid #BAD3EE 6px;
-}
-.dropdown{
-    position: relative;
-    padding-left: 200px;
 }
   
 .dropdown-content{
@@ -300,5 +297,30 @@ footer {
     width: 80px;
     height: 25px;
 }
+
+.location-dropdown {
+	text-decoration: none;
+    display: none;
+    position: absolute; 
+    top: 48%; 
+    left: 75%; 
+    width: 200px;
+}
+
+.location-dropdown li {
+    padding: 10px;
+    text-align: center;
+	list-style-type: none;
+}
+
+.location-dropdown a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-text.dropdown:hover + .location-dropdown {
+    display: block;
+}
+/* end Tapiwa */
 /*End Daryl*/
 }

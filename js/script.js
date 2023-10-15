@@ -32,3 +32,14 @@ window.onload = function () {
     document.getElementById("main-content").style.display = "block";
   });
 };
+
+const locationsLink = document.querySelector('.header-text.dropdown');
+const locationDropdown = document.querySelector('.location-dropdown');
+
+locationsLink.addEventListener('mouseover', () => {
+  locationDropdown.style.display = 'block';
+});
+
+locationDropdown.addEventListener('mouseleave', () => {
+  locationDropdown.style.display = 'none';
+});

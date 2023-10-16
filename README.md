@@ -24,4 +24,4 @@ This project was created by Timofei Gerasimov (aka Mithril64) as a part of a col
 
 ## License:
 
-This project is licensed under the MIT License. 123
+This project is licensed under the MIT License.

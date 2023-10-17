@@ -203,10 +203,13 @@ footer {
 		z-index: 100;
 	}
 	p {
-		font-size: 2vw;
+		font-size: 1rem;
 	}
 	.font-circular {
 		font-family: "Circular Std Book", serif;
+	}
+	.header-text{
+		font-size: 1rem;
 	}
 	#color-1 {
 		background-color: #00657c;

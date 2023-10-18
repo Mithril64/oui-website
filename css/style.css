@@ -94,7 +94,7 @@ body {
 	align-self: start;
 }
 
-.p-size{
+p {
 	font-size: 2vw;
 }
 
@@ -184,41 +184,6 @@ footer {
 
 #main-content {
 	display: none;
-}
-/*Ana -About us- */
-#about-us2{
-	display: flex;
-	flex-wrap: row wrap;
-	align-content: center;
-background-color: #00657C;
-
-width: 80rem;
-height: 47.938rem;
-}
-#about-us-font{
-justify-self: end;
-padding-top: 9rem;
-padding-left: 6.063rem;
-padding-right: 6.063rem;
-
-}
-#img{
-	justify-self: start;
-}
-#about_us_img{
-	width: 33.938rem;
-height: 47.938rem;
-}
-#about-us-font p{
-	text-align: justify;
-	word-spacing: -2.5px;
-	color: #EDE5BB;
-	font-family: "Circular Std Book", serif;
-}
-#about-us-font p2{
-	font-size: 4rem;
-	color: #EDE5BB;
-	font-family: "Circular Std Book", serif;
 }
 /*Daryl */
 @media only screen and (min-width:360px) {

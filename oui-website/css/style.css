@@ -1,0 +1,304 @@
+:root {
+	--blue-color: #00567c;
+	--yellow-color: #ede5bb;
+	--red-color: #95261f;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 15vmin;
+}
+
+.bg-yellow {
+	background-color: var(--yellow-color);
+}
+
+.grid-header {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 100;
+}
+
+.pl-5 {
+	padding-left: 5vw;
+}
+
+.header-text {
+	font-size: 2vw;
+	text-decoration: none;
+	color: var(--blue-color);
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.logo-image {
+	width: 10vw;
+	height: 10vw;
+}
+
+.pl-10 {
+	padding-left: 10vw;
+}
+
+.font-circular {
+	font-family: "Circular Std Book", serif;
+}
+
+.pl-6 {
+	padding-left: 6vw;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bg-transparent-blue {
+	background-color: var(--blue-color / 0.3);
+}
+
+.page-image {
+	width: 100%;
+}
+
+.bg-blue {
+	background-color: var(--blue-color);
+}
+
+.mb-3 {
+	margin-bottom: 3vw;
+}
+
+.header-image-text {
+	font-size: 4vw;
+	color: var(--yellow-color);
+}
+
+.align-top {
+	align-self: start;
+}
+
+p {
+	font-size: 2vw;
+}
+
+footer {
+	text-align: center;
+	background-color: var(--blue-color);
+	color: var(--yellow-color);
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.main-grid {
+	display: grid;
+	place-items: center;
+	place-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3vmin;
+}
+
+.main-grid h1 {
+	font-size: 7vw;
+	font-family: "Caveat", cursive;
+	color: var(--red-color);
+	text-align: center;
+}
+
+.main-grid-image {
+	object-fit: contain;
+	max-height: 100%;
+	max-width: 35vmin;
+}
+
+.main-image {
+	grid-row: span 2;
+}
+
+.main-grid p {
+	text-align: center;
+	color: var(--blue-color);
+}
+
+#color-1 {
+	background-color: #00657c;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-2 {
+	background-color: #ede5bb;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-3 {
+	background-color: #bad3ee;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-4 {
+	background-color: #95261f;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+.effect-wrapper {
+	z-index: 999;
+}
+
+.pr-5 {
+	padding-right: 5vw;
+}
+
+#main-content {
+	display: none;
+}
+/*Daryl */
+@media only screen and (min-width:360px) {
+
+
+	.bg-yellow {
+		background-color: var(--yellow-color);
+	}
+
+	.grid-header {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		z-index: 100;
+	}
+	p {
+		font-size: 2vw;
+	}
+	.font-circular {
+		font-family: "Circular Std Book", serif;
+	}
+	#color-1 {
+		background-color: #00657c;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 25vh;
+		height: 25vh;
+	}
+	
+	#color-2 {
+		background-color: #ede5bb;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 25vh;
+		height: 25vh;
+	}
+	
+	#color-3 {
+		background-color: #bad3ee;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 25vh;
+		height: 25vh;
+	}
+	
+	#color-4 {
+		background-color: #95261f;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 25vh;
+		height: 25vh;
+	}
+/*drop down menu*/
+.dropbtn{
+    color: #00657C;
+    cursor: pointer;
+    font-family: Circular Std;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+    translate: 80px -16px;
+}
+.dropbtn:hover{
+    border-bottom: solid #BAD3EE 6px;
+}
+.dropdown{
+    position: relative;
+    padding-left: 200px;
+}
+  
+.dropdown-content{
+    display: none;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Circular Std;
+}
+.dropdown-content a{
+    color: #EDE5BB;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+}
+  
+.dropdown-content a:hover{
+    background-color: #EDE5BB;
+    color: #95261F;
+    margin: 4px;
+    top: 4px;
+    bottom: 4px;
+    left: 2px;
+    right: 2px;
+    border-radius: 10px 10px 10px 10px;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: #95261F;
+    overflow: hidden;
+    box-shadow: 0px 2px 18px 0px rgba(51, 51, 51, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    translate: 80px -5px;
+}
+.dropdown:hover .dropbtn{
+    width: 80px;
+    height: 25px;
+}
+/*End Daryl*/
+}

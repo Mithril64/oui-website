@@ -45,6 +45,38 @@ body {
 	align-items: center;
 }
 
+.dropdown-menu{
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
+}
+
+.dropbtn-menu{
+	background-color: #ede5bb;
+	border: none;
+}
+
+.dropdown-menu-content{
+	display: none;
+	position: absolute;
+	border: solid rgba(0, 86, 124, .2) 3px;
+	border-bottom: none !important;
+	z-index: 1;
+}
+
+.dropdown-menu-content a{
+	color: var(--blue-color);
+	border-bottom: solid rgba(0, 86, 124, .2) 3px;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+}  
+
+.dropdown-menu:hover .dropdown-menu-content{
+	display: block;
+}
+
 .logo-image {
 	width: 19vw;
 	height: 10vw;

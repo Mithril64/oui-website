@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 :root {
 	--blue-color: #00567c;
 	--yellow-color: #ede5bb;
@@ -254,4 +259,169 @@ footer {
 		height: 25vh;
 	}
 /*End Daryl*/
+}
+/*Tran Thu*/
+.background-for-menu{
+	display: grid;
+}
+#red-bg h1{
+	font-family: Caveat;
+	color: #ede5bb;
+	font-size: 85px;
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+#red-bg p{
+	color: #ede5bb;
+	font-size: 24px;
+	grid-column: 2/9;
+	font-family: var(--font-circular);
+	grid-row-start: 3;
+	text-align: justify;
+}
+#red-bg{
+	background-color: #95261f;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+}
+.article{
+	display: grid;
+	grid-template-columns: repeat(18,1fr);
+}
+.article h2{
+	color: #95261f;
+	font-family: var(--font-caveat);
+	font-size: 48px;
+	grid-column-start: 10;
+	margin-top: 2em;
+}
+#title-of-each-catagory{
+	color: #274C5B;
+	font-family: var(--font-circular);
+	font-size: 64px;
+	grid-column: 6/ span 9;
+}
+section{
+	display: inline-flex;
+	flex-direction: column;
+	font-family: var(--font-circular);
+	color: #95261f;
+}
+#Cappuccino{
+	grid-column: 6/span 5;
+}
+section p{
+	font-size: 30px;
+}
+section small{
+	font-size: 20px;
+}
+#price-for-coffee{
+	grid-column-start: 13;
+	text-align: right;
+}
+#light-blue-bg{
+	background-color: #bad3ee;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+	margin-top: 6em;
+}
+#light-blue-bg h1{
+	font-family: Caveat;
+	color: #274C5B;
+	font-size: 85px;
+	grid-column-start: 16;
+	grid-row-start: 2;
+}
+#light-blue-bg p{
+	color: #274C5B;
+	font-size: 24px;
+	grid-column: 9/18;
+	font-family: var(--font-circular);
+	grid-row-start: 3;
+	text-align: justify;
+}
+#Natural{
+	grid-column: 6/span 5;
+}
+#price-for-croissant{
+	grid-column-start: 14;
+	text-align: right;
+}
+#title-of-croissant{
+	color: #274C5B;
+	font-family: var(--font-circular);
+	font-size: 64px;
+	grid-column: 6/ span 15;
+}
+#yellow-bg{
+	background-color: #ede5bb;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+	margin-top: 6em;
+}
+#yellow-bg h1{
+	font-family: Caveat;
+	color: #95261f;
+	font-size: 85px;
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+#yellow-bg p{
+	color: #95261f;
+	font-size: 24px;
+	grid-column: 2/9;
+	font-family: var(--font-circular);
+	grid-row-start: 3;
+	text-align: justify;
+}
+#title-of-sweet{
+	color: #274C5B;
+	font-family: var(--font-circular);
+	font-size: 64px;
+	grid-column: 9/12;
+}
+#Macaron{
+	grid-column: 6/span 5;
+}
+#price-for-sweet{
+	grid-column-start: 13;
+	text-align: right;
+}
+#sub-price-for-sweet{
+	margin-top: 10.5em;
+}
+#blue-bg{
+	background-color: #274C5B;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+	margin-top: 6em;
+}
+#blue-bg h1{
+	font-family: Caveat;
+	color: #ede5bb;
+	font-size: 85px;
+	grid-column-start: 16;
+	grid-row-start: 2;
+}
+#blue-bg p{
+	color: #ede5bb;
+	font-size: 24px;
+	grid-column: 9/18;
+	font-family: var(--font-circular);
+	grid-row-start: 3;
+	text-align: justify;
+}
+#title-of-tea{
+	color: #274C5B;
+	font-family: var(--font-circular);
+	font-size: 64px;
+	grid-column: 10/12;
+}
+#tea{
+	grid-column: 6/span 5;
+}
+#price-for-tea{
+	grid-column-start: 14;
+	text-align: right;
 }

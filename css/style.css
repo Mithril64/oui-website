@@ -34,9 +34,9 @@ body {
 }
 
 .header-text {
-	font-size: 2vw;
 	text-decoration: none;
-	color: var(--blue-color);
+	color: var(--blue-color);	
+	font-size: 2vw;
 }
 
 .header-menu {
@@ -93,7 +93,6 @@ body {
 .font-circular-bold {
 	font-family: var(--font-circular);
 	font-weight: bold;
-	font-size: 2vw;
 }
 
 .pl-6 {
@@ -129,14 +128,26 @@ body {
 	align-self: start;
 }
 
-p {
-	font-size: larger;
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: var(--yellow-color);
+	background: var(--red-color);
+	width: 100%;
+	font-size: 1vw;
 }
 
-footer {
-	text-align: center;
-	color: var(--blue-color);
-	width: 100%;
+.footer-left{
+	max-width: 15vw;
+	text-align: left;
+	padding-left: 3vw;
+}
+
+.footer-right{
+	max-width: 15vw;
+	text-align: right;
+	justify-self: right;
+	padding-right: 3vw;
 }
 
 .main-grid {

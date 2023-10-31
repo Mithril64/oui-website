@@ -222,6 +222,11 @@ footer {
 }
 /*Daryl */
 @media only screen and (min-width:360px) {
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
 
 	.bg-yellow {

@@ -1,13 +1,9 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 :root {
 	--blue-color: #00567c;
 	--yellow-color: #ede5bb;
 	--red-color: #95261f;
-	--font-circular: "Circular Std Book", serif;
+	--light-blue-color: #bad3ee;
+	--font-circular: "Circular Std Book", "Poppins", sans-serif;
 	--font-caveat: "Caveat", cursive;
 }
 
@@ -40,6 +36,7 @@ body {
 	left: 0;
 	width: 100vw;
 	z-index: 100;
+	border-bottom: var(--red-color) solid .2vw;
 }
 
 .pl-5 {
@@ -65,7 +62,7 @@ body {
 }
 
 .dropbtn-menu {
-	background-color: #ede5bb;
+	background-color: var(--yellow-color);
 	border: none;
 	margin-left: 3.7vw;
 }
@@ -73,8 +70,6 @@ body {
 .dropdown-menu-content {
 	display: none;
 	position: absolute;
-	border: solid var(--yellow-color) .2vw;
-	border-bottom: none !important;
 	z-index: 1111;
 }
 
@@ -85,7 +80,7 @@ body {
 	font-family: var(--font-circular);
 	color: var(--yellow-color);
 	background-color: var(--blue-color);
-	border-bottom: solid var(--yellow-color) .2vw;
+	margin-bottom: .7vw;
 	text-align: center;
 	text-decoration: none;
 	display: block;
@@ -155,6 +150,26 @@ body {
 	align-self: start;
 }
 
+.location-map {
+	align-items: center;
+	width: 80%;
+	height: 50vw;
+  }
+
+.locationText {
+	font-family: var(--font-caveat);
+	color: var(--red-color);
+	font-size: 45px;
+	text-align: center;
+}
+
+.location {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom: 3vh;
+}
+
 footer {
 	display: grid;
 	position: absolute;
@@ -168,14 +183,15 @@ footer {
 	font-size: 1vw;
 }
 
-.footer-left{
+.footer-left {
 	max-width: 15vw;
 	text-align: left;
 	padding-left: 3vw;
+	padding-top: 6vw;
 }
 
-.footer-right{
-	max-width: 15vw;
+.footer-right {
+	max-width: 12vw;
 	text-align: right;
 	justify-self: right;
 	padding-right: 3vw;
@@ -216,7 +232,7 @@ footer {
 }
 
 #color-1 {
-	background-color: #00657c;
+	background-color: var(--blue-color);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -226,7 +242,7 @@ footer {
 }
 
 #color-2 {
-	background-color: #ede5bb;
+	background-color: var(--yellow-color);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -236,7 +252,7 @@ footer {
 }
 
 #color-3 {
-	background-color: #bad3ee;
+	background-color: var(--light-blue-color);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -246,7 +262,7 @@ footer {
 }
 
 #color-4 {
-	background-color: #95261f;
+	background-color: var(--red-color);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -279,7 +295,7 @@ footer {
 	margin-left: 30vw;
 }
 #about-us-font {
-	background-color: #00657C;
+	background-color: var(--blue-color);
 	text-align: center;
 	border-radius: 10%;
 	padding: 5%;
@@ -290,19 +306,23 @@ footer {
 	grid-area: 1 / 3 / 4 / 6;
 }
 #about_us_img{
-	width: 40vw;
-	height: 50vw;
-	border-radius: 10% 10% 10% 10%;
+	width: 30vw;
+	height: 37vw;
+	border-radius: 10%;
 }
 #about-us-font p {
-	color: #EDE5BB;
+	color: var(--yellow-color);
 	font-family: var(--font-circular);
-	font-size: large;
+	font-size: 1vw;
 }
-#about-us-font p2{
-	font-size: 4rem;
-	color: #EDE5BB;
+#about-us-font h2{
+	font-size: 3vw;
+	color: var(--yellow-color);
 	font-family: var(--font-circular);
+}
+
+#tea {
+	margin-bottom: 15vw;
 }
 
 ::-webkit-scrollbar {
@@ -328,7 +348,7 @@ footer {
 
 /*Daryl */	
 @media only screen and (max-width:360px) {
-
+/* 
 	:root {
 		--blue-color: #00567c;
 		--yellow-color: #ede5bb;
@@ -358,7 +378,7 @@ footer {
 	}
 	.header-text{
 		font-size: 1rem;
-	}
+	} */
 	#color-1 {
 		background-color: var(--blue-color);
 		position: fixed;
@@ -380,7 +400,7 @@ footer {
 	}
 	
 	#color-3 {
-		background-color: #bad3ee;
+		background-color: var(--light-blue-color);
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -401,11 +421,12 @@ footer {
 /*End Daryl*/
 }
 /*Tran Thu*/
-.background-for-menu{
+.background-for-menu {
 	display: grid;
 }
-#red-bg h1{
+#red-bg h1 {
 	font-family: Caveat;
+
 	color: #ede5bb;
 	font-size: 85px;
 	/* grid-column-start: 2;
@@ -414,6 +435,7 @@ footer {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 #red-bg p{
 	color: #ede5bb;
 	font-size: 24px;
@@ -422,6 +444,7 @@ footer {
 	grid-row-start: 3;
 	text-align: justify;
 }
+
 #red-bg img{
 	/* grid-row: 2/4;
 	grid-column-start: 18; */
@@ -465,18 +488,21 @@ footer {
 	display: grid;
 	/* grid-template-rows: repeat(4,1fr); */
 	grid-template-rows: repeat(3,1fr);
+
 }
-.article{
+.article {
 	display: grid;
 	grid-template-columns: repeat(18,1fr);
 }
+
 .article h1{
 	z-index: 10;
 }
 .article h2{
 	color: #95261f;
+
 	font-family: var(--font-caveat);
-	font-size: 48px;
+	font-size: 3vw;
 	grid-column-start: 10;
 	margin-top: 2em;
 }
@@ -490,137 +516,186 @@ footer {
 }
 #title-of-each-catagory{
 	color: #274C5B;
+
 	font-family: var(--font-circular);
-	font-size: 64px;
-	grid-column: 6/ span 9;
+	font-size: 4vw;
+	grid-column: 6 / span 9;
 }
-section{
+section {
 	display: inline-flex;
 	flex-direction: column;
 	font-family: var(--font-circular);
-	color: #95261f;
+	color: var(--red-color);
 }
+
 #Cappuccino{
 	grid-column: 6/span 5;
 	z-index: 10;
+
 }
-section p{
-	font-size: 30px;
+section p {
+	font-size: 1.8vw;
 }
+
 section small{
 	font-size: 20px;
 	z-index: 10;
+
 }
-#price-for-coffee{
+#price-for-coffee {
 	grid-column-start: 13;
 	text-align: right;
 	z-index: 10;
 }
-#light-blue-bg{
-	background-color: #bad3ee;
+#light-blue-bg {
+	background-color: var(--light-blue-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 7em;
 	z-index: 10;
 }
-#light-blue-bg h1{
-	font-family: Caveat;
-	color: #274C5B;
-	font-size: 85px;
+#light-blue-bg h1 {
+	font-family: var(--font-caveat);
+	color: var(--blue-color);
+	font-size: 5vw;
 	grid-column-start: 16;
 	grid-row-start: 2;
 }
-#light-blue-bg p{
-	color: #274C5B;
+#light-blue-bg p {
+	color: var(--blue-color);
 	font-size: 24px;
-	grid-column: 9/18;
+	grid-column: 9 / 18;
 	font-family: var(--font-circular);
 	grid-row-start: 3;
 	text-align: justify;
 }
-#Natural{
-	grid-column: 6/span 5;
+#natural {
+	grid-column: 6 / span 5;
 }
-#price-for-croissant{
+#price-for-croissant {
 	grid-column-start: 14;
 	text-align: right;
 }
-#title-of-croissant{
-	color: #274C5B;
+#title-of-croissant {
+	color: var(--blue-color);
 	font-family: var(--font-circular);
-	font-size: 64px;
-	grid-column: 6/ span 15;
+	font-size: 4vw;
+	grid-column: 6 / span 15;
 }
-#yellow-bg{
-	background-color: #ede5bb;
+#yellow-bg {
+	background-color: var(--yellow-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 6em;
 }
-#yellow-bg h1{
-	font-family: Caveat;
-	color: #95261f;
-	font-size: 85px;
+#yellow-bg h1 {
+	font-family: var(--font-caveat);
+	color: var(--red-color);
+	font-size: 5vw;
 	grid-column-start: 2;
 	grid-row-start: 2;
 }
+
 #yellow-bg p{
 	color: #95261f;
 	font-size: 24px;
 	grid-column: 2/14;
+
 	font-family: var(--font-circular);
 	grid-row-start: 3;
 	text-align: justify;
 	z-index: 2;
 }
-#title-of-sweet{
-	color: #274C5B;
+#title-of-sweet {
+	color: var(--blue-color);
 	font-family: var(--font-circular);
-	font-size: 64px;
-	grid-column: 9/12;
+	font-size: 4vw;
+	grid-column: 9 / 12;
 }
-#Macaron{
-	grid-column: 6/span 5;
+#macaron {
+	grid-column: 6 / span 5;
 }
-#price-for-sweet{
+#price-for-sweet {
 	grid-column-start: 13;
 	text-align: right;
 }
-#sub-price-for-sweet{
+#sub-price-for-sweet {
 	margin-top: 10.5em;
 }
-#blue-bg{
-	background-color: #274C5B;
+#blue-bg {
+	background-color: var(--blue-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 6em;
 	z-index: 10;
 }
-#blue-bg h1{
-	font-family: Caveat;
-	color: #ede5bb;
-	font-size: 85px;
+#blue-bg h1 {
+	font-family: var(--font-caveat);
+	color: var(--yellow-color);
+	font-size: 5vw;
 	grid-column-start: 16;
 	grid-row-start: 2;
 }
+
 #blue-bg p{
 	color: #ede5bb;
 	font-size: 24px;
 	grid-column: 10/18;
+
 	font-family: var(--font-circular);
 	grid-row-start: 3;
 	text-align: justify;
 }
-#title-of-tea{
-	color: #274C5B;
+#title-of-tea {
+	color: var(--blue-color);
 	font-family: var(--font-circular);
-	font-size: 64px;
-	grid-column: 10/12;
+	font-size: 4vw;
+	grid-column: 10 / 12;
 }
-#tea{
-	grid-column: 6/span 5;
+#tea {
+	grid-column: 6 / span 5;
 }
-#price-for-tea{
+#price-for-tea {
 	grid-column-start: 14;
 	text-align: right;
+}
+
+@media only screen and (max-width: 500px) {
+	#about-us2 {
+		margin: 5vw;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		place-items: center;
+		place-content: center;
+		padding-bottom: 10vw;
+		width: 60vw;
+	}
+		
+	#about-us-font {
+		background-color: var(--blue-color);
+		text-align: center;
+		border-radius: 10%;
+		padding: 5%;
+		grid-area: 2 / 1 / 2 / 4;
+	}
+	#img{
+		border-radius: 10%;
+		grid-area: 1 / 3 / 4 / 6;
+	}
+	#about_us_img{
+		width: 80vw;
+		height: 120vw;
+		border-radius: 10%;
+	}
+	#about-us-font p {
+		color: var(--yellow-color);
+		font-family: var(--font-circular);
+		font-size: 3vw;
+	}
+	#about-us-font h2{
+		font-size: 5vw;
+		color: var(--yellow-color);
+		font-family: var(--font-circular);
+	}
 }

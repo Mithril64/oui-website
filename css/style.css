@@ -8,7 +8,7 @@
 	--yellow-color: #ede5bb;
 	--red-color: #95261f;
 	--light-blue-color: #bad3ee;
-	--font-circular: "Circular Std Book", serif;
+	--font-circular: "Circular Std Book", "Poppins", sans-serif;
 	--font-caveat: "Caveat", cursive;
 }
 
@@ -332,7 +332,7 @@ footer {
 
 /*Daryl */	
 @media only screen and (max-width:360px) {
-
+/* 
 	:root {
 		--blue-color: #00567c;
 		--yellow-color: #ede5bb;
@@ -362,7 +362,7 @@ footer {
 	}
 	.header-text{
 		font-size: 1rem;
-	}
+	} */
 	#color-1 {
 		background-color: var(--blue-color);
 		position: fixed;
@@ -384,7 +384,7 @@ footer {
 	}
 	
 	#color-3 {
-		background-color: #bad3ee;
+		background-color: var(--light-blue-color);
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -470,20 +470,20 @@ section small {
 	text-align: right;
 }
 #light-blue-bg {
-	background-color: #bad3ee;
+	background-color: var(--light-blue-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 6em;
 }
 #light-blue-bg h1 {
-	font-family: Caveat;
-	color: #274C5B;
+	font-family: var(--font-caveat);
+	color: var(--blue-color);
 	font-size: 5vw;
 	grid-column-start: 16;
 	grid-row-start: 2;
 }
 #light-blue-bg p {
-	color: #274C5B;
+	color: var(--blue-color);
 	font-size: 24px;
 	grid-column: 9 / 18;
 	font-family: var(--font-circular);
@@ -498,26 +498,26 @@ section small {
 	text-align: right;
 }
 #title-of-croissant {
-	color: #274C5B;
+	color: var(--blue-color);
 	font-family: var(--font-circular);
 	font-size: 4vw;
 	grid-column: 6 / span 15;
 }
 #yellow-bg {
-	background-color: #ede5bb;
+	background-color: var(--yellow-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 6em;
 }
 #yellow-bg h1 {
-	font-family: Caveat;
-	color: #95261f;
+	font-family: var(--font-caveat);
+	color: var(--red-color);
 	font-size: 5vw;
 	grid-column-start: 2;
 	grid-row-start: 2;
 }
 #yellow-bg p {
-	color: #95261f;
+	color: var(--red-color);
 	font-size: 2vw;
 	grid-column: 2 / 9;
 	font-family: var(--font-circular);
@@ -525,7 +525,7 @@ section small {
 	text-align: justify;
 }
 #title-of-sweet {
-	color: #274C5B;
+	color: var(--blue-color);
 	font-family: var(--font-circular);
 	font-size: 4vw;
 	grid-column: 9 / 12;
@@ -541,20 +541,20 @@ section small {
 	margin-top: 10.5em;
 }
 #blue-bg {
-	background-color: #274C5B;
+	background-color: var(--blue-color);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	margin-top: 6em;
 }
 #blue-bg h1 {
-	font-family: Caveat;
-	color: #ede5bb;
+	font-family: var(--font-caveat);
+	color: var(--yellow-color);
 	font-size: 5vw;
 	grid-column-start: 16;
 	grid-row-start: 2;
 }
 #blue-bg p {
-	color: #ede5bb;
+	color: var(--yellow-color);
 	font-size: 2vw;
 	grid-column: 9 / 18;
 	font-family: var(--font-circular);
@@ -562,7 +562,7 @@ section small {
 	text-align: justify;
 }
 #title-of-tea {
-	color: #274C5B;
+	color: var(--blue-color);
 	font-family: var(--font-circular);
 	font-size: 4vw;
 	grid-column: 10 / 12;

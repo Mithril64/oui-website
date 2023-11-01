@@ -206,7 +206,7 @@ footer {
 	align-items: center;
 }
 
-.main-grid h1 {
+.main-subgrid h1 {
 	font-size: 5vw;
 	font-family: var(--font-caveat);
 	color: var(--red-color);
@@ -290,7 +290,6 @@ footer {
 	grid-template-rows: repeat(3, 1fr);
 	place-items: center;
 	place-content: center;
-	padding-bottom: 10vw;
 	width: 60vw;
 	margin-left: 30vw;
 }
@@ -322,7 +321,7 @@ footer {
 }
 
 #tea {
-	margin-bottom: 15vw;
+	margin-bottom: 22vw;
 }
 
 ::-webkit-scrollbar {
@@ -421,176 +420,6 @@ footer {
 /*End Daryl*/
 }
 /*Tran Thu*/
-.background-for-menu {
-	display: grid;
-}
-#red-bg h1 {
-	font-family: Caveat;
-	color: var(--yellow-color);
-	font-size: 5vw;
-	grid-column-start: 2;
-	grid-row-start: 2;
-}
-#red-bg p {
-	color: var(--yellow-color);
-	font-size: 1.5vw;
-	grid-column: 2 / 9;
-	font-family: var(--font-circular);
-	grid-row-start: 3;
-	text-align: justify;
-}
-/* #red-bg img {
-	grid-column: 10/12;
-	grid-row: 2/3;
-} */   
-#red-bg {
-	background-color: var(--red-color);
-	display: grid;
-	grid-template-rows: repeat(4,1fr);
-	max-height: 21vw;
-}
-.article {
-	display: grid;
-	grid-template-columns: repeat(18,1fr);
-}
-.article h2 {
-	color: var(--red-color);
-	font-family: var(--font-caveat);
-	font-size: 3vw;
-	grid-column-start: 10;
-	margin-top: 2em;
-}
-#title-of-each-catagory {
-	color: var(--blue-color);
-	font-family: var(--font-circular);
-	font-size: 4vw;
-	grid-column: 6 / span 9;
-}
-section {
-	display: inline-flex;
-	flex-direction: column;
-	font-family: var(--font-circular);
-	color: var(--red-color);
-}
-#cappuccino {
-	grid-column: 6 / span 5;
-}
-section p {
-	font-size: 1.8vw;
-}
-section small {
-	font-size: 1.4vw;
-}
-#price-for-coffee {
-	grid-column-start: 13;
-	text-align: right;
-}
-#light-blue-bg {
-	background-color: var(--light-blue-color);
-	display: grid;
-	grid-template-rows: repeat(4,1fr);
-	margin-top: 6em;
-}
-#light-blue-bg h1 {
-	font-family: var(--font-caveat);
-	color: var(--blue-color);
-	font-size: 5vw;
-	grid-column-start: 16;
-	grid-row-start: 2;
-}
-#light-blue-bg p {
-	color: var(--blue-color);
-	font-size: 24px;
-	grid-column: 9 / 18;
-	font-family: var(--font-circular);
-	grid-row-start: 3;
-	text-align: justify;
-}
-#natural {
-	grid-column: 6 / span 5;
-}
-#price-for-croissant {
-	grid-column-start: 14;
-	text-align: right;
-}
-#title-of-croissant {
-	color: var(--blue-color);
-	font-family: var(--font-circular);
-	font-size: 4vw;
-	grid-column: 6 / span 15;
-}
-#yellow-bg {
-	background-color: var(--yellow-color);
-	display: grid;
-	grid-template-rows: repeat(4,1fr);
-	margin-top: 6em;
-}
-#yellow-bg h1 {
-	font-family: var(--font-caveat);
-	color: var(--red-color);
-	font-size: 5vw;
-	grid-column-start: 2;
-	grid-row-start: 2;
-}
-#yellow-bg p {
-	color: var(--red-color);
-	font-size: 2vw;
-	grid-column: 2 / 9;
-	font-family: var(--font-circular);
-	grid-row-start: 3;
-	text-align: justify;
-}
-#title-of-sweet {
-	color: var(--blue-color);
-	font-family: var(--font-circular);
-	font-size: 4vw;
-	grid-column: 9 / 12;
-}
-#macaron {
-	grid-column: 6 / span 5;
-}
-#price-for-sweet {
-	grid-column-start: 13;
-	text-align: right;
-}
-#sub-price-for-sweet {
-	margin-top: 10.5em;
-}
-#blue-bg {
-	background-color: var(--blue-color);
-	display: grid;
-	grid-template-rows: repeat(4,1fr);
-	margin-top: 6em;
-}
-#blue-bg h1 {
-	font-family: var(--font-caveat);
-	color: var(--yellow-color);
-	font-size: 5vw;
-	grid-column-start: 16;
-	grid-row-start: 2;
-}
-#blue-bg p {
-	color: var(--yellow-color);
-	font-size: 2vw;
-	grid-column: 9 / 18;
-	font-family: var(--font-circular);
-	grid-row-start: 3;
-	text-align: justify;
-}
-#title-of-tea {
-	color: var(--blue-color);
-	font-family: var(--font-circular);
-	font-size: 4vw;
-	grid-column: 10 / 12;
-}
-#tea {
-	grid-column: 6 / span 5;
-}
-#price-for-tea {
-	grid-column-start: 14;
-	text-align: right;
-}
-
 @media only screen and (max-width: 500px) {
 	#about-us2 {
 		margin: 5vw;
@@ -599,7 +428,6 @@ section small {
 		grid-template-rows: repeat(3, 1fr);
 		place-items: center;
 		place-content: center;
-		padding-bottom: 10vw;
 		width: 60vw;
 	}
 		
@@ -629,4 +457,45 @@ section small {
 		color: var(--yellow-color);
 		font-family: var(--font-circular);
 	}
+}
+
+/* menu */
+
+.menu {
+	width: 80vw;
+	height: 200vw;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+.menu-coffee-main-content {
+	display: flex;
+	padding-left: 20vw;
+	width: 60vw;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu-coffee-subheader h1 {
+	font-size: 5vw;
+	font-family: var(--font-circular);
+	color: var(--blue-color);
+	text-align: center;
+}
+
+.menu-coffee-subheader h3 {
+	font-size: 3vw;
+	font-family: var(--font-caveat);
+	color: var(--red-color);
+	text-align: center;
 }

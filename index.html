@@ -13,6 +13,7 @@
 			rel="stylesheet"
 	/>
 	<title>OUI</title>
+
 </head>
 <body class="bg-yellow">
 <!-- THE LOAD ANIMATION -->
@@ -39,7 +40,7 @@
 				</div>
 			</div>
 			<a href="#" class="header-text font-circular-bold"> About Us</a>
-			<a href="#" class="header-text font-circular-bold dropdown"> Locations</a>
+			<a href="#map" class="header-text font-circular-bold dropdown"> Locations</a>
 		</div>
 	</header>
 	<main class="main-grid pl-5 pr-5">
@@ -78,6 +79,11 @@
 			
 		</div>
 	</main>
+	<div class="location">
+		<div class="locationText">Find a store</div>
+		<div id="map" class="location-map">.</div>
+	</div>
+    <div id="footer">
 	<footer class="font-circular">
 		<div class="footer-left">
 		<p>Contact us<br>marcel.baron@nhlstenden.com +31 (0) 6-82588713 </p>
@@ -87,5 +93,6 @@
 		</div>
 </div>
 <script src="js/script.js" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfRcGBeCzMXByxU_nHI_scX4YZCzgMzU&callback=initMap" async defer></script>
 </body>
 </html>

@@ -32,3 +32,11 @@ window.onload = function () {
     document.getElementById("main-content").style.display = "block";
   });
 };
+
+var map;
+function initMap() {
+  var map = new google.maps.Map(document.querySelector('.location-map'), {
+    center: { lat: 52.784590662222634, lng: 6.891474154635342 },
+    zoom: 10, 
+  });
+}

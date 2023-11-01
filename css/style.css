@@ -128,6 +128,26 @@ body {
 	align-self: start;
 }
 
+.location-map {
+	align-items: center;
+	width: 80%;
+	height: 50vw;
+  }
+
+.locationText {
+	font-family: var(--font-caveat);
+	color: var(--red-color);
+	font-size: 45px;
+	text-align: center;
+}
+
+.location {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom: 3vh;
+}
+
 footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

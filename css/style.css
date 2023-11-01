@@ -285,17 +285,17 @@ footer {
 	grid-area: 1 / 3 / 4 / 6;
 }
 #about_us_img{
-	width: 40vw;
-	height: 50vw;
-	border-radius: 10% 10% 10% 10%;
+	width: 30vw;
+	height: 37vw;
+	border-radius: 10%;
 }
 #about-us-font p {
 	color: var(--yellow-color);
 	font-family: var(--font-circular);
-	font-size: large;
+	font-size: 1vw;
 }
-#about-us-font p2{
-	font-size: 4rem;
+#about-us-font h2{
+	font-size: 3vw;
 	color: var(--yellow-color);
 	font-family: var(--font-circular);
 }
@@ -568,4 +568,44 @@ section small {
 #price-for-tea {
 	grid-column-start: 14;
 	text-align: right;
+}
+
+@media only screen and (max-width: 500px) {
+	#about-us2 {
+		margin: 5vw;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		place-items: center;
+		place-content: center;
+		padding-bottom: 10vw;
+		width: 60vw;
+	}
+		
+	#about-us-font {
+		background-color: var(--blue-color);
+		text-align: center;
+		border-radius: 10%;
+		padding: 5%;
+		grid-area: 2 / 1 / 2 / 4;
+	}
+	#img{
+		border-radius: 10%;
+		grid-area: 1 / 3 / 4 / 6;
+	}
+	#about_us_img{
+		width: 80vw;
+		height: 120vw;
+		border-radius: 10%;
+	}
+	#about-us-font p {
+		color: var(--yellow-color);
+		font-family: var(--font-circular);
+		font-size: 3vw;
+	}
+	#about-us-font h2{
+		font-size: 5vw;
+		color: var(--yellow-color);
+		font-family: var(--font-circular);
+	}
 }

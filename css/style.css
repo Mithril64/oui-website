@@ -419,6 +419,10 @@ footer {
 	grid-row-start: 3;
 	text-align: justify;
 }
+#red-bg img{
+	grid-column: 10/12;
+	grid-row: 2/3;
+}
 #red-bg{
 	background-color: #95261f;
 	display: grid;

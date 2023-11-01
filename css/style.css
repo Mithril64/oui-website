@@ -167,10 +167,11 @@ footer {
 	max-width: 15vw;
 	text-align: left;
 	padding-left: 3vw;
+	padding-top: 6vw;
 }
 
 .footer-right {
-	max-width: 15vw;
+	max-width: 12vw;
 	text-align: right;
 	justify-self: right;
 	padding-right: 3vw;
@@ -421,7 +422,7 @@ footer {
 /* #red-bg img {
 	grid-column: 10/12;
 	grid-row: 2/3;
-} */
+} */   
 #red-bg {
 	background-color: var(--red-color);
 	display: grid;

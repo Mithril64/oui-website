@@ -112,6 +112,10 @@ body {
 	font-family: var(--font-circular);
 }
 
+.fs-3 {
+	font-size: 3vw;
+}
+
 .font-circular-bold {
 	font-family: var(--font-circular);
 	font-weight: bold;
@@ -324,81 +328,6 @@ footer {
 	color: var(--yellow-color);
 	background: var(--red-color);
 }
-
-/*Daryl */	
-@media only screen and (max-width:360px) {
-/* 
-	:root {
-		--blue-color: #00567c;
-		--yellow-color: #ede5bb;
-		--red-color: #95261f;
-		--font-circular: "Circular Std Book", serif;
-		--font-caveat: "Caveat", cursive;
-	}
-
-	.bg-yellow {
-		background-color: var(--yellow-color);
-	}
-
-	.grid-header {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		z-index: 100;
-	}
-	p {
-		font-size: 1rem;
-	}
-	.font-circular {
-		font-family: var(--font-circular);
-	}
-	.header-text{
-		font-size: 1rem;
-	} */
-	#color-1 {
-		background-color: var(--blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-2 {
-		background-color: var(--yellow-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-3 {
-		background-color: var(--light-blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-4 {
-		background-color: var(--red-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-/*End Daryl*/
-}
 /*Tran Thu*/
 .background-for-menu {
 	display: grid;
@@ -571,6 +500,14 @@ section small {
 }
 
 @media only screen and (max-width: 500px) {
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.fs-3 {
+		font-size: 3vw !important;
+	}
 	#about-us2 {
 		margin: 5vw;
 		display: grid;
@@ -608,4 +545,5 @@ section small {
 		color: var(--yellow-color);
 		font-family: var(--font-circular);
 	}
+
 }

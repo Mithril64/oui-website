@@ -1,8 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 :root {
 	--blue-color: #00567c;
 	--yellow-color: #ede5bb;
@@ -168,13 +163,13 @@ footer {
 	font-size: 1vw;
 }
 
-.footer-left{
+.footer-left {
 	max-width: 15vw;
 	text-align: left;
 	padding-left: 3vw;
 }
 
-.footer-right{
+.footer-right {
 	max-width: 15vw;
 	text-align: right;
 	justify-self: right;

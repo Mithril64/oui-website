@@ -334,32 +334,47 @@ footer {
 	gap: 0.9vw;
 }
 #product_highlight{
-	display:flex;
-	background-color: var(--blue-color);
-	justify-content: center;
-	align-content: center;
-	flex-flow: column wrap;
-	padding-bottom: 5vw;
-	gap: 0.5vw;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	padding-right: 10vw;
 	width: 100%;
+	background-color: var(--blue-color);
+	grid-row: inline;
+	
 }
 
 #hl_header{
-		position: absolute;
+	z-index: 10;
+	grid-area: 1 / 1 / 1 / 6;
+	padding-top: 7vw;
+	padding-left: 13vw;
 }
 
 #hl_Offer{
+	font-family: var(--font-caveat);
+	font-size: 3vw;
+	color: var(--light-blue-color);
 }
 
 #hl_sign{
+	font-family: var(--font-circular);
+	font-size: 3vw;
+	color: var(--yellow-color);
+}
+.bg-patterns{
+	z-index: 5;
+	grid-area: 1 / 1 / 6 / 7
 }
 
-.bg-patterns{
-	position: relative;
-	object-fit: contain;
+.bg-obj{
+object-fit: fill;
 }
+
 #product_row3{
-	position: absolute;
+	place-items: center;
+	z-index: 10;
+	grid-area: 3 / 1 / 1/ 7;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -419,8 +434,8 @@ footer {
 }
 
 .americano{
-	width: 15.2vw;
-	height: 15.2vw;
+	width: 219px;
+	height: 219px;
 	image-rendering: auto;
 }
 

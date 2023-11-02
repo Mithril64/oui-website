@@ -347,39 +347,6 @@ footer {
 	background: var(--red-color);
 }
 
-/*Daryl */	
-@media only screen and (max-width:360px) {
-/* 
-	:root {
-		--blue-color: #00567c;
-		--yellow-color: #ede5bb;
-		--red-color: #95261f;
-		--font-circular: "Circular Std Book", serif;
-		--font-caveat: "Caveat", cursive;
-	}
-
-	.bg-yellow {
-		background-color: var(--yellow-color);
-	}
-
-	.grid-header {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		z-index: 100;
-	}
-	p {
-		font-size: 1rem;
-	}
-	.font-circular {
-		font-family: var(--font-circular);
-	}
-	.header-text{
-		font-size: 1rem;
-	} */
 	#color-1 {
 		background-color: var(--blue-color);
 		position: fixed;
@@ -419,10 +386,45 @@ footer {
 		width: 25vh;
 		height: 25vh;
 	}
-/*End Daryl*/
-}
+
 /*Tran Thu*/
 @media only screen and (max-width: 500px) {
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.text-settings{
+		font-size: 3vw !important;
+	}
+	.text-settings-header{
+		font-size: 5vw !important;
+	}
+
+	.size-to-fill{
+		padding: 0!important;
+	}
+	.header-margin{
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	.header-margin-second{
+		margin-top: 5%;
+		margin-right: 5%;
+	}
+	.content-discription-margin-first{
+		margin-left: 5%;
+		margin-bottom: 5%;
+		margin-right: 40%;
+	}
+	.content-discription-margin-second{
+		margin-left: 40%;
+		margin-bottom: 5%;
+		margin-right: 5%;
+	}
+
+	
+
 	#about-us2 {
 		margin: 5vw;
 		display: grid;

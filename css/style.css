@@ -750,17 +750,17 @@ object-fit: fill;
     background-color: var(--light-blue-color);
 }
 
+.menu-pain-header img{
+    width: 30vw;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
 .header-pain {
     display: flex;
     flex-direction: column;
     grid-column: 3/ span 2;
 	justify-content: space-evenly;
-}
-
-.menu-pain-header img{
-    width: 30vw;
-    grid-column-start: 1;
-    grid-row-start: 1;
 }
 
 .menu-pain-header h2 {

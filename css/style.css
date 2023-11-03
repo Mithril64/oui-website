@@ -216,8 +216,8 @@ footer {
 
 .main-grid-image {
 	object-fit: contain;
-	max-height: 200%;
-	max-width: 30vw;
+	width: 30vw;
+	padding-bottom: 10vw;
 }
 
 .main-image {
@@ -231,6 +231,33 @@ footer {
 	text-align: center;
 	font-size: 1.5vw;
 	color: var(--blue-color);
+}
+
+.main-subgrid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-us-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 4vw;
+	margin-top: 5vw;
+}
+
+.about-us-buttons .button {
+	background-color: var(--red-color);
+	text-decoration: none;
+	border: none;
+	padding: 1vw 2vw;
+	border-radius: 1vw;
+	font-size: 1.6vw;
+	font-family: var(--font-circular);
+	color: var(--yellow-color);
 }
 
 #color-1 {
@@ -541,45 +568,45 @@ footer {
 	background: var(--red-color);
 }
 
-	#color-1 {
-		background-color: var(--blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-2 {
-		background-color: var(--yellow-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-3 {
-		background-color: var(--light-blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-4 {
-		background-color: var(--red-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
+#color-1 {
+	background-color: var(--blue-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-2 {
+	background-color: var(--yellow-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-3 {
+	background-color: var(--light-blue-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-4 {
+	background-color: var(--red-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
 /*End Daryl*/
 
 /*Tran Thu*/
@@ -619,8 +646,6 @@ footer {
 		margin-right: 5%;
 	}
 
-	
-
 	#about-us2 {
 		margin: 5vw;
 		display: grid;
@@ -656,6 +681,14 @@ footer {
 		font-size: 5vw;
 		color: var(--yellow-color);
 		font-family: var(--font-circular);
+	}
+
+	.menu-coffee-header {
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		width: 100%;
+		background-color: var(--red-color);
+		margin-top: 26vw;
 	}
 }
 

@@ -576,7 +576,7 @@ object-fit: fill;
 		height: 25vh;
 	}
 /*End Daryl*/
-}
+
 /*Tran Thu*/
 
 @media only screen and (max-width: 500px) {
@@ -698,10 +698,18 @@ object-fit: fill;
 }
 
 .menu-coffee-header {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--red-color);
-	padding: 2vw 60vw 2vw 3vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    background-color: var(--red-color);
+    margin-top: 110vh;
+}
+
+.subhdr {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/ span 2;
+    margin: 10vh 0 0 10vw;
 }
 
 .menu-coffee-header h2 {
@@ -735,10 +743,17 @@ object-fit: fill;
 }
 
 .menu-pain-header {
-	display: flex;
-	flex-direction: column;
-	grid-column: 3/ span 2;
-	margin: 5vh 0 0 10vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    background-color: var(--light-blue-color);
+}
+
+.menu-pain-header img{
+    width: 30vw;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
 .menu-pain-header h2 {
@@ -756,10 +771,10 @@ object-fit: fill;
 }
 
 .menu-sweets-header {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--yellow-color);
-	padding: 2vw 60vw 2vw 3vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    background-color: var(--yellow-color);
 }
 
 .menu-sweets-header img{
@@ -781,10 +796,11 @@ object-fit: fill;
 }
 
 .menu-tea-header {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--blue-color);
-	padding: 2vw 3vw 2vw 60vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    background-color: var(--blue-color);
 }
 
 .menu-tea-header img{

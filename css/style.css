@@ -56,47 +56,61 @@ body {
 }
 
 .dropdown-menu {
-	position: relative;
-	display: inline-block;
-	background-color: transparent;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
 }
 
 .dropbtn-menu {
-	background-color: var(--yellow-color);
-	border: none;
-	margin-left: 3.7vw;
+    background-color: var(--yellow-color);
+    border: none;
+    margin-left: 3.7vw;
 }
 
 .dropdown-menu-content {
-	display: none;
-	position: absolute;
-	z-index: 1111;
+    display: none;
+    position: absolute;
+    z-index: 1111;
 }
 
 .dropdown-menu-content a {
-	padding-left: 3vw;
-	padding-right: 3vw;
-	font-size: 2vw;
-	font-family: var(--font-circular);
-	color: var(--yellow-color);
-	background-color: var(--blue-color);
-	margin-bottom: .7vw;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	transition: all .5s ease-in-out;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 2vw;
+    font-family: var(--font-circular);
+    color: var(--yellow-color);
+    background-color: var(--blue-color);
+    margin-bottom: .7vw;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease-in-out;
 }  
 
+.dropdown-menu-content a:hover{
+	color: var(--yellow-color);
+	border-radius: .5dvw .5dvw .5dvw .5dvw;
+	margin: .2dvh .2dvw .2dvh .2dvw;
+}
+
+.dropdown-menu:hover .dropdown-menu-content{
+	display: block;
+	background-color: var(--blue-color);
+	overflow: hidden;
+	box-shadow: 0 2dvw 18dvw 0 rgba(51, 51, 51, 0.1);
+	border-radius: 1dvw 1dvw 1dvw 1dvw;
+  }
+
 .dropdown-menu a:hover, .dropdown-menu:focus {
-	box-shadow: inset 0 -3.25em 0 0 var(--red-color);
+    box-shadow: inset 0 -3.25em 0 0 var(--red-color);
 }
 
 .dropbtn-menu:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .dropdown-menu:hover .dropdown-menu-content { 
-	display: block;
+    display: block;
 }
 
 .logo-image {

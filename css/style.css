@@ -756,6 +756,13 @@ object-fit: fill;
     grid-row-start: 1;
 }
 
+.header-pain {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/ span 2;
+    margin: 5vh 0 0 10vw;
+}
+
 .menu-pain-header h2 {
 	font-size: 6vw;
 	font-family: var(--font-caveat);

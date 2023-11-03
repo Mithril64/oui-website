@@ -481,6 +481,7 @@ object-fit: fill;
 	place-content: center;
 	width: 60vw;
 	margin-left: 20vw;
+	padding-top: 50dvh;
 }
 #about-us-font {
 	background-color: var(--blue-color);

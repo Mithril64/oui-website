@@ -56,47 +56,61 @@ body {
 }
 
 .dropdown-menu {
-	position: relative;
-	display: inline-block;
-	background-color: transparent;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
 }
 
 .dropbtn-menu {
-	background-color: var(--yellow-color);
-	border: none;
-	margin-left: 3.7vw;
+    background-color: var(--yellow-color);
+    border: none;
+    margin-left: 3.7vw;
 }
 
 .dropdown-menu-content {
-	display: none;
-	position: absolute;
-	z-index: 1111;
+    display: none;
+    position: absolute;
+    z-index: 1111;
 }
 
 .dropdown-menu-content a {
-	padding-left: 3vw;
-	padding-right: 3vw;
-	font-size: 2vw;
-	font-family: var(--font-circular);
-	color: var(--yellow-color);
-	background-color: var(--blue-color);
-	margin-bottom: .7vw;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	transition: all .5s ease-in-out;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 2vw;
+    font-family: var(--font-circular);
+    color: var(--yellow-color);
+    background-color: var(--blue-color);
+    margin-bottom: .7vw;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease-in-out;
 }  
 
+.dropdown-menu-content a:hover{
+	color: var(--yellow-color);
+	border-radius: .5dvw .5dvw .5dvw .5dvw;
+	margin: .2dvh .2dvw .2dvh .2dvw;
+}
+
+.dropdown-menu:hover .dropdown-menu-content{
+	display: block;
+	background-color: var(--blue-color);
+	overflow: hidden;
+	box-shadow: 0 2dvw 18dvw 0 rgba(51, 51, 51, 0.1);
+	border-radius: 1dvw 1dvw 1dvw 1dvw;
+  }
+
 .dropdown-menu a:hover, .dropdown-menu:focus {
-	box-shadow: inset 0 -3.25em 0 0 var(--red-color);
+    box-shadow: inset 0 -3.25em 0 0 var(--red-color);
 }
 
 .dropbtn-menu:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .dropdown-menu:hover .dropdown-menu-content { 
-	display: block;
+    display: block;
 }
 
 .logo-image {
@@ -163,7 +177,6 @@ body {
 	padding-bottom: 3vw;
 	font-size: 4vw;
 	text-align: center;
-	margin-top: 10vw;
 }
 
 .location {
@@ -217,8 +230,8 @@ footer {
 
 .main-grid-image {
 	object-fit: contain;
-	max-height: 200%;
-	max-width: 30vw;
+	width: 30vw;
+	padding-bottom: 10vw;
 }
 
 .main-image {
@@ -232,6 +245,33 @@ footer {
 	text-align: center;
 	font-size: 1.5vw;
 	color: var(--blue-color);
+}
+
+.main-subgrid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-us-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 4vw;
+	margin-top: 5vw;
+}
+
+.about-us-buttons .button {
+	background-color: var(--red-color);
+	text-decoration: none;
+	border: none;
+	padding: 1vw 2vw;
+	border-radius: 1vw;
+	font-size: 1.6vw;
+	font-family: var(--font-circular);
+	color: var(--yellow-color);
 }
 
 #color-1 {
@@ -486,7 +526,7 @@ footer {
 	place-content: center;
 	width: 60vw;
 	margin-left: 20vw;
-	padding-top: 50dvh;
+	padding-top: 10vw;
 }
 #about-us-font {
 	background-color: var(--blue-color);
@@ -542,45 +582,45 @@ footer {
 	background: var(--red-color);
 }
 
-	#color-1 {
-		background-color: var(--blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-2 {
-		background-color: var(--yellow-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-3 {
-		background-color: var(--light-blue-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
-	
-	#color-4 {
-		background-color: var(--red-color);
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 25vh;
-		height: 25vh;
-	}
+#color-1 {
+	background-color: var(--blue-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-2 {
+	background-color: var(--yellow-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-3 {
+	background-color: var(--light-blue-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
+
+#color-4 {
+	background-color: var(--red-color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+	height: 25vh;
+}
 /*End Daryl*/
 
 /*Tran Thu*/
@@ -620,8 +660,6 @@ footer {
 		margin-right: 5%;
 	}
 
-	
-
 	#about-us2 {
 		margin: 5vw;
 		display: grid;
@@ -657,6 +695,14 @@ footer {
 		font-size: 5vw;
 		color: var(--yellow-color);
 		font-family: var(--font-circular);
+	}
+
+	.menu-coffee-header {
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		width: 100%;
+		background-color: var(--red-color);
+		margin-top: 26vw;
 	}
 }
 
@@ -708,7 +754,7 @@ footer {
     grid-template-columns: repeat(5,1fr);
     width: 100%;
     background-color: var(--red-color);
-    margin-top: 110vh;
+    margin-top: 26vw;
 }
 
 .menu-coffee-header h2 {
@@ -721,7 +767,8 @@ footer {
 .subhdr {
 	display: flex;
 	flex-direction: column;
-	grid-column: 2/ span 2;
+	grid-column: 1/ span 3;
+	padding-left: 3vw;
 	justify-content: space-evenly;
 }
 
@@ -758,7 +805,8 @@ footer {
 .header-pain {
     display: flex;
     flex-direction: column;
-    grid-column: 3/ span 2;
+    grid-column: 3/ span 3;
+	padding-right: 3vw;
 	justify-content: space-evenly;
 }
 

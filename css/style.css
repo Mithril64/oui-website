@@ -705,13 +705,6 @@ object-fit: fill;
     margin-top: 110vh;
 }
 
-.subhdr {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/ span 2;
-    margin: 10vh 0 0 10vw;
-}
-
 .menu-coffee-header h2 {
 	font-size: 6vw;
 	font-family: var(--font-caveat);
@@ -722,8 +715,8 @@ object-fit: fill;
 .subhdr {
 	display: flex;
 	flex-direction: column;
-	grid-column: 1/ span 2;
-	margin: 10vh 0 0 10vw;
+	grid-column: 2/ span 2;
+	justify-content: space-evenly;
 }
 
 .menu-coffee-header img{

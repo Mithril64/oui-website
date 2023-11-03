@@ -154,7 +154,7 @@ body {
 	align-items: center;
 	width: 80%;
 	height: 50vw;
-	margin-bottom: 20vw;
+	margin-bottom: 10vw;
   }
 
 .location-text {
@@ -163,14 +163,13 @@ body {
 	padding-bottom: 3vw;
 	font-size: 4vw;
 	text-align: center;
-	margin-top: 40vw;
+	margin-top: 10vw;
 }
 
 .location {
 	display: flex;
 	flex-direction: column;
     align-items: center;
-	padding-bottom: 6vh;
 }
 
 footer {
@@ -190,7 +189,7 @@ footer {
 	max-width: 15vw;
 	text-align: left;
 	padding-left: 3vw;
-	padding-top: 11vh;
+	padding-top: 10vh;
 }
 
 .footer-right {

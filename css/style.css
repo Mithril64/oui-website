@@ -387,7 +387,7 @@ object-fit: fill;
 .product{
 	padding: 1vw;
 	flex-flow: column nowrap;
-	border-radius: 15px;
+	border-radius: 1.1vw;
 	background-color: white;
 }
 
@@ -485,18 +485,18 @@ object-fit: fill;
 #about-us-font {
 	background-color: var(--blue-color);
 	text-align: center;
-	border-radius: 15px;
+	border-radius: 1.1vw;
 	padding: 5%;
 	grid-area: 2 / 1 / 2 / 4;
 }
 #img{
-	border-radius: 15px;
+	border-radius: 1.1vw;
 	grid-area: 1 / 3 / 4 / 6;
 }
 #about_us_img{
 	width: 30vw;
 	height: 37vw;
-	border-radius: 15px;
+	border-radius: 1.1vw;
 }
 #about-us-font p {
 	color: var(--yellow-color);
@@ -629,18 +629,18 @@ object-fit: fill;
 	#about-us-font {
 		background-color: var(--blue-color);
 		text-align: center;
-		border-radius: 15px;
+		border-radius: 1.1vw;
 		padding: 5%;
 		grid-area: 2 / 1 / 2 / 4;
 	}
 	#img{
-		border-radius: 15px;
+		border-radius: 1.1vw;
 		grid-area: 1 / 3 / 4 / 6;
 	}
 	#about_us_img{
 		width: 80vw;
 		height: 120vw;
-		border-radius: 15px;
+		border-radius: 1.1vw;
 	}
 	#about-us-font p {
 		color: var(--yellow-color);

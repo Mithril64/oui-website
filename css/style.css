@@ -204,7 +204,7 @@
 	max-width: 15vw;
 	text-align: left;
 	padding-left: 3vw;
-	padding-top: 10vh;
+	padding-top: 6dvh;
   }
   
   .footer-right {
@@ -462,6 +462,13 @@
 	align-items: center;
 	padding: 10vw 0;
   }
+
+  .Yellow-bg #Yellow{
+	height: auto; 
+	width: 100%; 
+	z-index: 0; 
+	margin-top: -110dvh;
+  }
   
   .offer-header {
 	margin: auto;
@@ -474,6 +481,7 @@
 	align-items: flex-end;
 	flex-wrap: nowrap;
 	gap: 2vw;
+	z-index: 1;
   }
   
   .offer-header-text {
@@ -481,6 +489,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	z-index: 1;
   }
   
   .offer-header-text h1 {
@@ -488,6 +497,7 @@
 	font-family: var(--font-circular);
 	color: var(--yellow-color);
 	text-align: left;
+	z-index: 1;
   }
   
   .offer-header-text h3 {
@@ -495,6 +505,7 @@
 	font-family: var(--font-caveat);
 	color: var(--light-blue-color);
 	text-align: left;
+	z-index: 1;
   }
   
   .offer-header-button {
@@ -506,6 +517,7 @@
 	font-size: 1.6vw;
 	font-family: var(--font-circular);
 	color: var(--yellow-color);
+	z-index: 1;
   }
   
   .offer-header-button {
@@ -520,6 +532,7 @@
 	flex-wrap: wrap;
 	width: 80vw;
 	gap: 2vw;
+	z-index: 1;
   }
   
   /*-About us-*/
@@ -553,6 +566,7 @@
 	color: var(--yellow-color);
 	font-family: var(--font-circular);
 	font-size: 1.5vw;
+	text-align: justify;
   }
   #about-us-font h2 {
 	font-size: 3vw;

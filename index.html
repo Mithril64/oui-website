@@ -49,10 +49,10 @@
               Menu
             </button>
             <div class="dropdown-menu-content">
-              <a href="#coffee-link">Coffee</a>
-              <a href="#pain-link">Pain</a>
-              <a href="#sweets-link">Sweets</a>
-              <a href="#tea-link">Tea</a>
+              <a href="#coffee-link">Coffee<img src="img/illustrations_yellow_coffee.svg" alt="yellow-coffee-illustrations" id="illustrations-coffee"></a>
+              <a href="#pain-link">Pain<img src="img/illustrations_yellow_croissant.svg" alt="yellow-pain-illustrations" id="illustrations-pain"></a>
+              <a href="#sweets-link">Sweets<img src="img/illustrations_yellow_merengue.svg" alt="yellow-sweets-illustrations" id="illustrations-sweets"></a>
+              <a href="#tea-link">Tea<img src="img/illustrations_yellow_tea.svg" alt="yellow-tea-illustrations" id="illustrations-tea"></a>
             </div>
           </div>
           <a
@@ -537,24 +537,30 @@
       <!--LOCATION-->
       <div class="location" id="map-link">
         <div class="location-text">Find a store</div>
-        <div class="location-map">.</div>
-      </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Raadhuisplein,%207811%20AP%20Emmen&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+            </div></div>      
+          </div>
       <footer class="font-circular">
         <div class="footer-left">
-          <p>Contact us<br />marcel.baron@nhlstenden.com +31 (0) 6-82588713</p>
+          <p>Contact us</p>
+          <p>marcel.baron@nhlstenden.com</p>
+          <p>+31 (0) 6-82588713</p>
         </div>
         <div class="footer-right">
-          <p>
-            Opening times:<br />Tue 10:00 to 21:00 Wed 10:00 to 21:00 Thu 10:00 to 21:00 Fri 10:00 to 21:00 Sat 15:00 to 22:00 Sun 15:00 to 22:00
+          <p>Opening times:</p>
+          <p>Tue 10:00 to 21:00</p>
+          <p>Wed 10:00 to 21:00</p> 
+          <p>Thu 10:00 to 21:00</p> 
+          <p>Fri 10:00 to 21:00</p> 
+          <p>Sat 15:00 to 22:00</p> 
+          <p>Sun 15:00 to 22:00</p>
           </p>
         </div>
       </footer>
     </div>
     <script src="js/script.js" defer></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfRcGBeCzMXByxU_nHI_scX4YZCzgMzU&callback=initMap"
-      async
-      defer
-    ></script>
   </body>
 </html>

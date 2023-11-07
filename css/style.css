@@ -197,9 +197,11 @@
 	overflow:hidden;
 	background:none!important;
   }
+
   #gmap_canvas{
 	height: 50vw;
 	width: 80vw;
+	border: none;
   }
   
   .location-text {
